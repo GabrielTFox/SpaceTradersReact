@@ -13,6 +13,9 @@ import MenuCards from './components/MenuCards';
 // Coniguration Imports
 import { access_token } from './config/configurations';
 
+// Repo Imports
+import userStatus from './repository/UserStatusRepo';
+
 class App extends React.Component {
   state = {
     self_data: {},
@@ -46,6 +49,8 @@ class App extends React.Component {
         this.setState({ credits });
         this.setState({ faction });
       })
+    // const self_data = userStatus();
+    // console.log("Self Data: \n" + JSON.stringify(self_data));
   }
 
   render() {
