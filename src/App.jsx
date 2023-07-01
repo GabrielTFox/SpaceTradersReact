@@ -39,7 +39,7 @@ class App extends React.Component {
         const symbol = self_data.symbol;
         const hq = self_data.headquarters;
         const credits = self_data.credits;
-        const faction = JSON.stringify(self_data.startingFaction);
+        const faction = self_data.startingFaction;
         this.setState({ account_id });
         this.setState({ symbol });
         this.setState({ hq });
