@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import {access_token} from '../config/configurations';
 
-export default class SelfAnalysis extends React.Component {
+class SelfAnalysis extends React.Component {
   state = {
     self_data: {},
     account_id: "",
@@ -51,3 +51,5 @@ export default class SelfAnalysis extends React.Component {
     )
   }
 }
+
+export default SelfAnalysis;
